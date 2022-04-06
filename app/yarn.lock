@@ -5,6 +5,15 @@ __metadata:
   version: 7
   cacheKey: 9
 
+"@babel/runtime@npm:^7.17.8":
+  version: 7.17.8
+  resolution: "@babel/runtime@npm:7.17.8"
+  dependencies:
+    regenerator-runtime: "npm:^0.13.4"
+  checksum: b7bbbbce047f4ee97366ccef16a1d8e2cc724b37663ecf0728dbc5f52d724f6c111ce44180eb1548aa39baa81b2d7fb96190ebbc29d0b48b26cf98115d3ec995
+  languageName: node
+  linkType: hard
+
 "js-tokens@npm:^3.0.0 || ^4.0.0":
   version: 4.0.0
   resolution: "js-tokens@npm:4.0.0"
@@ -55,6 +64,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"regenerator-runtime@npm:^0.13.4":
+  version: 0.13.9
+  resolution: "regenerator-runtime@npm:0.13.9"
+  checksum: db060af0b2ca8bb7f12aea9dcf7416ff80259b39c2ddd38e0bd705b0a7acd9f07be133e543bbf54af1e86253b6fd553e3050fd6b30c3282731dd27560427f065
+  languageName: node
+  linkType: hard
+
 "scheduler@npm:^0.21.0":
   version: 0.21.0
   resolution: "scheduler@npm:0.21.0"
@@ -68,6 +84,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "test_app@workspace:."
   dependencies:
+    "@babel/runtime": "npm:^7.17.8"
     react: "npm:^18.0.0"
     react-dom: "npm:^18.0.0"
     react-image: "npm:^4.0.3"

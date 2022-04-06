@@ -2,13 +2,13 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 6
-  cacheKey: 8
+  version: 7
+  cacheKey: 9
 
 "js-tokens@npm:^3.0.0 || ^4.0.0":
   version: 4.0.0
   resolution: "js-tokens@npm:4.0.0"
-  checksum: 8a95213a5a77deb6cbe94d86340e8d9ace2b93bc367790b260101d2f36a2eaf4e4e22d9fa9cf459b38af3a32fb4190e638024cf82ec95ef708680e405ea7cc78
+  checksum: 47d1c18dc6b9eed4baf1db3d81b36feb95b463201c82ffce0d7a4d65ede596ba97d6ac2468974199705db9ef8a3433606af41fc7bbe7cb25c1dd601785413d9b
   languageName: node
   linkType: hard
 
@@ -16,10 +16,10 @@ __metadata:
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
   dependencies:
-    js-tokens: ^3.0.0 || ^4.0.0
+    js-tokens: "npm:^3.0.0 || ^4.0.0"
   bin:
     loose-envify: cli.js
-  checksum: 6517e24e0cad87ec9888f500c5b5947032cdfe6ef65e1c1936a0c48a524b81e65542c9c3edc91c97d5bddc806ee2a985dbc79be89215d613b1de5db6d1cfe6f4
+  checksum: 39c5fc44c6a8f7f8a92cccf174554fbb307477ef493760407920fdd4ed5f6cc1aec5b6a5ab3c3767ef79547b3e1aea09d8ca08d773232c662d910cfe473a0590
   languageName: node
   linkType: hard
 
@@ -27,11 +27,22 @@ __metadata:
   version: 18.0.0
   resolution: "react-dom@npm:18.0.0"
   dependencies:
-    loose-envify: ^1.1.0
-    scheduler: ^0.21.0
+    loose-envify: "npm:^1.1.0"
+    scheduler: "npm:^0.21.0"
   peerDependencies:
     react: ^18.0.0
-  checksum: dd0ba9f2f31dd728076c892a95b2f5a8dfe79136431b0289afb46eec39d0ca6b6f0f40a60fd8aa6ef702c98ce7c26100d3d4dbc35c7c9e87429cd04f84cb58bd
+  checksum: 105260a7e004eaea625842d659fc14082baff86398043015e54f0522c203a9bf5157dc95eb10740bd7ad15ed23716a9b1fc7e12a6548e03b6484f8a9537483fe
+  languageName: node
+  linkType: hard
+
+"react-image@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "react-image@npm:4.0.3"
+  peerDependencies:
+    "@babel/runtime": ">=7"
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  checksum: a696db7d76d37b0b8ffd480fcc3d9c6b9ad87826d6bff92a2045f1084198cd3403349d4979ff46900a699928a24184bb53d4d666c2561aebcf7e72b17a7dcbed
   languageName: node
   linkType: hard
 
@@ -39,8 +50,8 @@ __metadata:
   version: 18.0.0
   resolution: "react@npm:18.0.0"
   dependencies:
-    loose-envify: ^1.1.0
-  checksum: 293020b96536b3c7113ee57ca5c990a3f25649d1751b1c7a3aabd16dff0691fe9f1eed1206616d0906d05933536052037340a0c8d0941ff870b0eb469a2f975b
+    loose-envify: "npm:^1.1.0"
+  checksum: ecf8e4c2d345921a0c229dd8c9920fbe21bb8ac5581a9f57e864b40032f0c6f34206b2e9e56d98b8bb65555e54d063b39985c1f4f73af8386c22838420c6e0b1
   languageName: node
   linkType: hard
 
@@ -48,8 +59,8 @@ __metadata:
   version: 0.21.0
   resolution: "scheduler@npm:0.21.0"
   dependencies:
-    loose-envify: ^1.1.0
-  checksum: 4f8285076041ed2c81acdd1faa987f1655fdbd30554bc667c1ea64743fc74fb3a04ca7d27454b3d678735df5a230137a3b84756061b43dc5796e80701b66d124
+    loose-envify: "npm:^1.1.0"
+  checksum: 0116015778a6899ad75c509f0a573df83f742859390968ee9212c91c860cbdbd2b0de99bbae31741c377099328259eb49bcfaa3f920504075f3ba4eeb9097483
   languageName: node
   linkType: hard
 
@@ -57,7 +68,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "test_app@workspace:."
   dependencies:
-    react: ^18.0.0
-    react-dom: ^18.0.0
+    react: "npm:^18.0.0"
+    react-dom: "npm:^18.0.0"
+    react-image: "npm:^4.0.3"
   languageName: unknown
   linkType: soft

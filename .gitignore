@@ -1,6 +1,6 @@
-app/.yarn/*
-!app/.yarn/patches
-!app/.yarn/releases
-!app/.yarn/plugins
-!app/.yarn/sdks
-!app/.yarn/versions
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
